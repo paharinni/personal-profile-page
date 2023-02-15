@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #23252C;
+    color: #F5F5F5;
+    display: grid;
+    place-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.app {
+    display: block;
+    margin: 30px;
+    background-color: #1A1B21;
+    width: 330px;
+}
+
+.info {
+    text-align: center;
+}
+
+.info--image {
+    width: 330px;
+}
+
+.info--position {
+    color: #faedcd;
+    font-weight: 400;
+}
+
+.info > h5 {
+    font-weight: 300;
+}
+
+.info--buttons {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.info--buttons > a {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+.info--buttons > a > h3 {
+    margin: 0;
+    padding: 8px;
+}
+
+.info--left--btn {
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    border: 2px #FFFFFF solid;
+    color: #23252C;
+}
+.info--left--btn:hover {
+    color: #FFFFFF;
+    border: 2px #23252C solid;
+}
+
+.info--right--btn {
+    color: #FFFFFF;
+    background-color: #0274B3;
+    border-radius: 6px;
+    border: 2px #0274B3 solid;
+}
+.info--right--btn:hover {
+    color: #0274B3;
+    border-radius: 6px;
+    border: 2px #23252C solid;
+}
+
+.about {
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+}
+.about > h3 {
+    font-weight: 700;
+}
+
+.about > p {
+    text-indent: 0px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.interests {
+    display: block;
+    margin: 0 0 0 10px;
+    padding: 0px;
+}
+
+.interests > h3 {
+    font-weight: 700;
+}
+
+.interests > ul {
+    font-weight: 300;
+    font-size: 14px;
+ 
+    list-style: none; /* Remove default bullets */
+}
+
+.interests > ul > li {
+    margin: 5px 0;
+}
+
+.interests > ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #faedcd;
+  font-weight: bold;
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.footer {
+    background-color: #161619;
+    width: 100%;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer > a > img {
+    width: 40px;
+    transition: width 1s;
+    
+}
+
+.footer > a > img:hover {
+    width: 50px;
+    border: 2px #faedcd solid;
+    border-radius: 10px;
+}
